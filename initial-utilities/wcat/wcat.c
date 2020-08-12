@@ -1,5 +1,5 @@
 /* 
-   wcat.c - version 0.1 of cat 
+   wcat.c - progtam wcat of ostep-projects 
   - Print everything it reads;
  */
 
@@ -10,10 +10,10 @@ void do_cat(FILE*);
 
 int main(int argc, char** argv) {
 
-    // Open a file
     FILE* filePointer;
+
     while( --argc ) {
-        if( (filePointer = fopen(*(++argv), "r")) != NULL ) {
+        if( (filePointer = fopen(*(++argv), "r")) != NULL ) {  // Open a file successfully
             do_cat(filePointer);           
             fclose(filePointer);
         } else {
