@@ -1,0 +1,1 @@
+../../tester/run-tests.sh: line 23: 12699 Segmentation fault      (core dumped) ./wzip tests/6.in
